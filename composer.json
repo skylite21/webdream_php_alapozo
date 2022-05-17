@@ -1,0 +1,13 @@
+{
+    "name": "skylite/php_alapozo",
+    "type": "project",
+    "authors": [
+        {
+            "name": "skylite",
+            "email": "zsolt.lengyel21@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}
