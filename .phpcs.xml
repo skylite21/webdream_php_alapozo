@@ -2,7 +2,6 @@
 <ruleset name="Custom Standard" >
   <description>Our custom coding standard</description>
   <rule ref="Generic">
-  <exclude name="Generic.NamingConventions.AbstractClassNamePrefix.Missing"/>
   <exclude name="Generic.PHP.CharacterBeforePHPOpeningTag.Found"/>
   <exclude name="Generic.NamingConventions.InterfaceNameSuffix.Missing"/>
   <exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
