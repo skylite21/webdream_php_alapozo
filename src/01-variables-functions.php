@@ -30,7 +30,7 @@ echo "\n";
  * @param string $name
  */
 function my_greeting($name) {
-    echo "Hello {$name} \n"; 
+  echo "Hello {$name} \n";
 }
 
 my_greeting("John");
