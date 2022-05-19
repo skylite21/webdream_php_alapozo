@@ -2,6 +2,8 @@
 <ruleset name="Custom Standard" >
   <description>Our custom coding standard</description>
   <rule ref="Generic">
+  <exclude name="Generic.PHP.DisallowShortOpenTag.EchoFound" />
+  <exclude name="Generic.Commenting.DocComment.ShortNotCapital" />
   <exclude name="Generic.PHP.CharacterBeforePHPOpeningTag.Found"/>
   <exclude name="Generic.NamingConventions.InterfaceNameSuffix.Missing"/>
   <exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
@@ -23,5 +25,11 @@
   <exclude name="Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps"/>
   <exclude name="Generic.Formatting.SpaceAfterNot.Incorrect"/>
   <exclude name="Generic.NamingConventions.CamelCapsFunctionName.ScopeNotCamelCaps"/>
+  </rule>
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+        <property name="indent" value="2"/>
+        <property name="tabIndent" value="false"/>
+    </properties>
   </rule>
 </ruleset>

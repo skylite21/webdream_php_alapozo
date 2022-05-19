@@ -7,7 +7,15 @@
             "email": "zsolt.lengyel21@gmail.com"
         }
     ],
+    "scripts": {
+      "phpcs": "phpcs --standard=.phpcs.xml src/",
+      "start": "php -S 0.0.0.0:8080"
+    },
+    "config": {
+      "process-timeout": 0
+    },
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
-    }
+    },
+    "require": {}
 }
