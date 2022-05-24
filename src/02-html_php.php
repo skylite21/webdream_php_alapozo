@@ -13,12 +13,13 @@
     <?php
     date_default_timezone_set('Europe/Budapest');
     $pattern = 'yyyy MMMM d. HH:mm:ss';
-    // windows: error
-      // echo datefmt_format(new IntlDateFormatter('hu_HU',
-    //                     pattern: $pattern), time() );
+    echo datefmt_format(new IntlDateFormatter('hu_HU',
+                        pattern: $pattern), time() );
     ?> 
   </h2>
-  <h2>You searched for: <?= htmlspecialchars($_GET['term']); ?>  </h2>
+  <?php if (isset($_GET['term'])) : ?>
+    <h2>You searched for: <?= htmlspecialchars($_GET['term']); ?>  </h2>
+  <?php endif; ?>
   
 </body>
 </html>

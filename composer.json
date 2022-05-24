@@ -17,5 +17,7 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
     },
-    "require": {}
+    "require": {
+      "ext-intl": "*"
+    }
 }

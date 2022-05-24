@@ -4,7 +4,8 @@
 composer require --dev "squizlabs/php_codesniffer=*"
 ```
 
-TODO:
+konfigurálhato phpcs beállítások:
 
-phpcs sor hossz és tabsize beállítás
-date format windows-on
+https://github.com/squizlabs/PHP_CodeSniffer/wiki/Customisable-Sniff-Properties#genericwhitespacescopeindent
+
+
