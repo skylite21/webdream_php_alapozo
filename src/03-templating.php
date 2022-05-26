@@ -13,5 +13,3 @@ $term = null;
 if (isset($_GET['term'])) {
   $term = htmlspecialchars($_GET['term']);
 }
-
-require '03-templating.tpl.php';

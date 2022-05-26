@@ -1,3 +1,6 @@
+
+<?php require '03-templating.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

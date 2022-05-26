@@ -34,3 +34,29 @@ if($user_id) {
 
 echo $user_status;
 
+echo "\n";
+
+
+$y = 4;
+if(isset($x)) {
+  echo $x;
+} else {
+  echo $y;
+}
+
+echo isset($x) ? $x : $y;
+
+// null coalescing operator:
+echo $x ?? $y;
+
+
+// a ?? csak akkor adja a bal oldalt ha az nem létezik
+$x = false; 
+var_dump($x ?? $y);
+
+// ha az $x korábban létezett akkor ne változzon az értéke, de ha nem létezik
+// akkor legyen az értéke $y 
+// php 7.4+
+$x ??= $y;
+
+
