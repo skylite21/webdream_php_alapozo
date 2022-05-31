@@ -15,7 +15,8 @@
       "process-timeout": 0
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "vimeo/psalm": "^4.23"
     },
     "require": {
       "ext-intl": "*"

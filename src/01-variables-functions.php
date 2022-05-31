@@ -29,7 +29,7 @@ echo "\n";
  *
  * @param string $name
  */
-function my_greeting($name) {
+function my_greeting($name) : void {
   echo "Hello {$name} \n";
 }
 

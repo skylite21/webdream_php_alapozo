@@ -13,7 +13,7 @@
     <?php
     date_default_timezone_set('Europe/Budapest');
     $pattern = 'yyyy MMMM d. HH:mm:ss';
-    echo datefmt_format(new IntlDateFormatter('hu_HU',
+    echo datefmt_format(new IntlDateFormatter('hu_HU', 0, 0,
                         pattern: $pattern), time() );
     ?> 
   </h2>

@@ -6,7 +6,8 @@ $name = 'John';
 date_default_timezone_set('Europe/Budapest');
 
 $pattern = 'yyyy MMMM d. HH:mm:ss';
-$date    = datefmt_format(new IntlDateFormatter('hu_HU',
+// dateType, timeType are ignored because we define a pattern
+$date = datefmt_format(new IntlDateFormatter('hu_HU', 0, 0,
   pattern: $pattern), time() );
 
 $term = null;

@@ -14,7 +14,7 @@ echo say_hello($name);
 
 echo "$name\n";
 // pass by reference                👇
-function convert_to_say_hello(string &$n) {
+function convert_to_say_hello(string &$n) : void {
   $n = "Hello $n!\n";
 }
 
@@ -39,7 +39,7 @@ echo sum(2, 4, 5)."\n";
 echo sum(2, 4, 5, 4, 32, 5, 3, 5);
 
 
-function hello() {
+function hello() : void {
   echo "Hello \n";
 }
 

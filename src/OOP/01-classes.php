@@ -8,24 +8,32 @@
 // adat, és működés
 class Project {
   // properties
-  public $title;
-  public $description;
+  public string $title;
+  public string $description;
+
+  public function __construct(string $title, string $description) {
+    // $this kulcsszó: a később létrejövő objektum példányra egy referencia
+    $this->title       = $title;
+    $this->description = $description;
+
+  }
 
   // methods
-  public function close() {
+  public function close() : void {
 
   }
-
-  public function add_user() {
+  // snake-case
+  public function add_user() : void {
 
   }
+  // addUser: camelCase
 }
 
 // instantiation: példányosítás
-$my_project = new Project();
+$my_project = new Project('My Project', 'My project description');
 
 // $my_project egy konkrét project
-$my_project->title = "My Project";
+echo $my_project->title."\n";
 
 // $my_project a Project példánya
 echo $my_project->title;
@@ -33,21 +41,25 @@ echo $my_project->description;
 echo "\n";
 
 class Product {
-  public $price;
-  private $stock = 0;
-  public function purchse($amount) {
+  public int|float $price;
+  private int $stock = 0;
+
+  public function __construct(int|float $price) {
+    $this->price = $price;
+  }
+  public function purchse(int $amount) : void {
     $this->stock -= $amount;
   }
 
-  public function get_stock() {
+  public function get_stock() : int {
     return $this->stock;
   }
-  public function add_stock($amount) {
+  public function add_stock(int $amount) : void {
     $this->stock += $amount;
   }
 }
 
-$keyboard = new Product();
+$keyboard = new Product(123);
 
 echo $keyboard->get_stock(). "\n";
 $keyboard->add_stock(23);
