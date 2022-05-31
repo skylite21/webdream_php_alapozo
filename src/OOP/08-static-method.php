@@ -9,6 +9,7 @@ class Solution {
   }
 }
 
+// Singleton
 Solution::$count = 1;
 
 for ($i = 0; $i < 5; $i++) {
