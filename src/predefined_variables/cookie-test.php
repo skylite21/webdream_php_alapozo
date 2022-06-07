@@ -9,6 +9,12 @@
 <?php
 if(isset($_POST['subscribe'])) {
   setcookie('name', $_POST['name'], time()+60 );
+  // https://en.wikipedia.org/wiki/HTTP_303
   header('Location: '.$_SERVER['PHP_SELF'], true, 303 );
 }
+if($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+  http_response_code(401);
+  echo "delete method";
+}
+
 ?>
