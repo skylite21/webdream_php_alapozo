@@ -15,3 +15,16 @@ https://github.com/squizlabs/PHP_CodeSniffer/wiki/Customisable-Sniff-Properties#
 
 https://psalm.dev/docs/running_psalm/installation/
 
+
+HTTP Request:
+   - URL
+   - Request Method
+   - Headers
+   - Body
+
+HTTP Response:
+  - Status code
+  - Headers
+  - Body
+
+
